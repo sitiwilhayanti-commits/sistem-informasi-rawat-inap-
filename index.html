@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMRS - Rumah Sakit</title>
+
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2>✚ SIMRS</h2>
+        <p class="subtitle">Sistem Informasi Rumah Sakit</p>
+
+        <nav>
+            <a href="#dashboard" class="active">🏠 Dashboard</a>
+            <a href="#pasien">👤 Data Pasien</a>
+            <a href="#rawat">🏥 Rawat Inap</a>
+            <a href="#kamar">🛏 Data Kamar</a>
+            <a href="#dokter">🩺 Data Dokter</a>
+            <a href="#laporan">📊 Laporan</a>
+        </nav>
+
+        <p class="footer">SIMRS Demo • Versi 1.0</p>
+    </aside>
+
+    <!-- KONTEN UTAMA -->
+    <main class="main">
+
+        <header class="header">
+            <div>
+                <h2>Dashboard</h2>
+                <p>Sistem Informasi Manajemen Rumah Sakit</p>
+            </div>
+            <div class="admin">👤 Administrator</div>
+        </header>
+
+        <div class="content">
+
+            <!-- DASHBOARD -->
+            <section id="dashboard" class="section">
+                <h1>Selamat Datang di SIMRS!</h1>
+                <p class="description">
+                    Kelola informasi dan pelayanan rumah sakit
+                    melalui satu sistem.
+                </p>
+
+                <div class="cards">
+                    <div class="card">
+                        <p>Total Pasien</p>
+                        <h2>128</h2>
+                    </div>
+
+                    <div class="card">
+                        <p>Pasien Rawat Inap</p>
+                        <h2>36</h2>
+                    </div>
+
+                    <div class="card">
+                        <p>Total Kamar</p>
+                        <h2>80</h2>
+                    </div>
+
+                    <div class="card">
+                        <p>Total Dokter</p>
+                        <h2>24</h2>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <h3>Informasi Rumah Sakit</h3>
+                    <p>
+                        Website ini digunakan untuk membantu
+                        pengelolaan informasi pasien, kamar,
+                        dokter, dan pelayanan rawat inap.
+                    </p>
+                </div>
+            </section>
+
+            <!-- DATA PASIEN -->
+            <section id="pasien" class="section">
+                <h2>Data Pasien</h2>
+
+                <div class="panel">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>No. RM</th>
+                                <th>Nama Pasien</th>
+                                <th>Umur</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>RM-001</td>
+                                <td>Andi Saputra</td>
+                                <td>35 tahun</td>
+                                <td><span class="status">Dirawat</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>RM-002</td>
+                                <td>Siti Rahma</td>
+                                <td>28 tahun</td>
+                                <td><span class="waiting">Menunggu</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>RM-003</td>
+                                <td>Budi Santoso</td>
+                                <td>46 tahun</td>
+                                <td><span class="status">Dirawat</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- RAWAT INAP -->
+            <section id="rawat" class="section">
+                <h2>Data Rawat Inap</h2>
+
+                <div class="panel">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>No. RM</th>
+                                <th>Nama Pasien</th>
+                                <th>Kamar</th>
+                                <th>Dokter</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>RM-001</td>
+                                <td>Andi Saputra</td>
+                                <td>A-01</td>
+                                <td>dr. Maya</td>
+                            </tr>
+
+                            <tr>
+                                <td>RM-003</td>
+                                <td>Budi Santoso</td>
+                                <td>B-02</td>
+                                <td>dr. Arif</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- DATA KAMAR -->
+            <section id="kamar" class="section">
+                <h2>Data Kamar</h2>
+
+                <div class="panel">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>No. Kamar</th>
+                                <th>Kelas</th>
+                                <th>Kapasitas</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>A-01</td>
+                                <td>Kelas I</td>
+                                <td>2 pasien</td>
+                                <td><span class="status">Tersedia</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>A-02</td>
+                                <td>Kelas I</td>
+                                <td>2 pasien</td>
+                                <td><span class="waiting">Penuh</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>B-01</td>
+                                <td>Kelas II</td>
+                                <td>4 pasien</td>
+                                <td><span class="status">Tersedia</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- DATA DOKTER -->
+            <section id="dokter" class="section">
+                <h2>Data Dokter</h2>
+
+                <div class="panel">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID Dokter</th>
+                                <th>Nama Dokter</th>
+                                <th>Spesialisasi</th>
+                                <th>Jadwal</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>DR-001</td>
+                                <td>dr. Maya Putri</td>
+                                <td>Penyakit Dalam</td>
+                                <td>Senin - Rabu</td>
+                            </tr>
+
+                            <tr>
+                                <td>DR-002</td>
+                                <td>dr. Arif Pratama</td>
+                                <td>Bedah</td>
+                                <td>Selasa - Kamis</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- LAPORAN -->
+            <section id="laporan" class="section">
+                <h2>Laporan Rumah Sakit</h2>
+
+                <div class="cards">
+                    <div class="card">
+                        <p>Total Pasien</p>
+                        <h2>128</h2>
+                    </div>
+
+                    <div class="card">
+                        <p>Rawat Inap</p>
+                        <h2>36</h2>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <h3>Ringkasan Laporan</h3>
+                    <p>Jumlah kamar: 80</p>
+                    <p>Jumlah dokter: 24</p>
+                    <p>Data di atas merupakan data contoh.</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
